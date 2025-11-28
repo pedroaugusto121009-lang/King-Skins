@@ -1,4 +1,4 @@
-﻿.home {
+.home {
   background-color: #000;
   color: #fff;
   font-family: Arial, sans-serif;
@@ -520,6 +520,7 @@ header h1 {
   font-weight: bold;
   color: #fff;
   text-shadow: 0 0 10px #ff00c8, 0 0 20px #ff00c8;
+  text-decoration: none;
 }
 
 header h1 span {
@@ -536,6 +537,7 @@ header h1 span {
   font-weight: bold;
   transition: 0.3s;
   margin-left: 15px;
+  display: inline-block;
 }
 
 .btn-voltar:hover {
@@ -591,4 +593,29 @@ body.login header {
 
 body.login .btn-voltar {
   margin-top: 30px !important;
+}
+.btn-voltar {
+  text-decoration: none !important;
+}
+
+header .btn-voltar:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+header {
+  border-bottom: 3px solid #ff00c8 !important;
+}
+body.home header {
+  border-bottom: none !important;
+}
+
+body.home .btn-voltar {
+  border: 2px solid #ff00c8 !important;
+  text-decoration: none !important;
+}
+
+body.home h1 {
+  border: none !important;
+  text-decoration: none !important;
 }
